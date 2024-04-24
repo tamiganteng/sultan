@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 238, 255, 0.7), rgba(0, 255, 213, 0.7));
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(./img/fotoku.jpg);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0 8%;
+}
+.logo {
+    color: rgb(255, 204, 0);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #615f5f;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:rgb(255, 204, 0);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color:rgb(115, 121, 125);
+    transition:  .4s;
+    transform: scale(1.2);
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h2 {
+    color:  rgb(255, 204, 0);
+    font-size: 35px;
+    margin: 10px 0px 10px;
+}
+h4 {
+    color:  rgb(115, 121, 125);
+    font-size: 20px;
+    margin: 10px 0px 10px;
+}
+.news form {width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.news form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid  rgb(255, 204, 0);
+    outline: none;
+    border-radius: 30px;
+}
+.news form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 204, 0);
+box-shadow: 0px 0px 5px rgb(255, 204, 0), 0px 0px 15px #858585;
+top: 6px;
+right: 6px;
+}
+.about {
+    width: 100%;
+    padding: 10% 0px;
+    background-color: rgb(255, 204, 0);
+}
+.about img {
+    height: auto;
+    width: 430px;
+}
+.about-text {
+    width: 550px;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}.about-text h2 {
+    color: #615f5f;
+    letter-spacing: 2px;
+    font: size 75px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text h5 {
+    color: #615f5f;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p {
+    color: #615f5f;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.kelanjutannya {
+    background-color: rgb(255, 204, 0);
+    width: 100%;
+    padding: 100px 0;
+}
+.tittle h2 {
+    color: #858585;
+    font-size: 75px;
+    width: 1130px;
+    text-align: center;
+    margin: auto;
+    background-color:  rgb(255, 204, 0);
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color:  rgb(255, 204, 0);
+}
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #858585;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: aquamarine;
+}
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p {
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button {
+    background-color:  rgb(255, 204, 0);
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+}
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}
+.kontak-saya {
+    width: 100%;
+    background-color: rgb(255, 204, 0);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.kontak-saya p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.kontak-saya .button-dua {
+    background-color: aquamarine;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.kontak-saya .button-dua:hover{
+    background-color: transparent;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: rgb(255, 204, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    width: 500px;
+    line-height: 26px;
+}
+.sosial {
+    display: flex;
+}
+.sosial a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aquamarine;
+    border-radius: 50%;
+    margin: 5px 5px;
+    text-decoration: none;
+    color: rgb(255, 204, 0);
+    font-size: 20px;
+}
+
+.sosial a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.end {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 35px;
+}

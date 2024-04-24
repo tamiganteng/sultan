@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="sul.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">CV</h2>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#Tentang Saya" class="nav-link">Tentang saya</a></li>
+                <li><a href="#Kelanjutannya" class="nav-link">Kelanjutannya</a></li>
+                <li><a href="#Kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+        <div class="content">
+            <h4>Hello! Nama Saya</h4>
+            <h2><marquee behavior="" direction="right">TENGKU <SPAN>SULTAN</SPAN> CHATAMI</marquee></h2>
+            <h4>Saya adalah seorang murid di SMK TELKOM MEDAN</h4>
+        </div>
+    </div>
+</section>
+<section id="Tentang Saya">
+    <div class="about">
+        <div class="main">
+            <img src="./img/alay.jpg">
+            <div class="about-text">
+                <h2>Tentang Saya</h2>
+                <h5>Developer Pemula<span>& Designer Pemula</span></h5>
+                <p>Saya adalah seorang pelajar di SMK TELKOM MEDAN,
+                    yang sekarang berumur 17 tahun, saya tinggal di medan dan lahir dimedan
+                    saya 3 bersaudara dan kebetulan saya anal kedua dari saudara saudara saya,
+                    saya tamatan dari pesantren SMP Alam Al-Ayman, saya sekarang tinggal di medan polonia.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Kelanjutannya">
+    <div class="service">
+        <div class="tittle">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="box">
+            <div class="card"> 
+                <h5>Flutter</h5>
+                <div class="pra">
+                    <img src="./img/sultan oke katanya.png">
+                    <p>Flutter adalah sebuah kerangka kerja aplikasi seluler sumber terbuka yang diciptakan oleh Google. Flutter digunakan dalam pengembangan aplikasi untuk sistem operasi Android, iOS, Windows, Linux, MacOS.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Figma</h5>
+                <div class="pra">
+                    <img src="./img/figma2.png">
+                    <p>Figma adalah salah satu aplikasi berbasis cloud yang populer digunakan untuk mendesain, membuat prototype aplikasi, membuat diagram, dan berkolaborasi di papan tulis online.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Skills</h5>
+                <div class="pra">
+                    <img src="./img/development.jpg">
+                    <p>Selain pelajar saya juga pemula web development dalam bidang desain grafis,yang gemar dalam dunia coding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Kontak">
+    <div class="kontak-saya">
+        <p>Lihat lebih jauh tentang saya</p>
+        <a href="#" class="button-dua">Hubungi Saya</a>
+    </div>
+    <footer>
+        <p>TENGKU SULTAN CHATAMI</p>
+        <p>Untuk lebih mengenal tentang saya, hubungi :</p>
+        <div class="sosial">
+            <a href="https://www.facebook.com/?locale=id_ID"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/sayitonnn/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</section>
+    <script>
+        // JavaScript untuk menangani navigasi
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
